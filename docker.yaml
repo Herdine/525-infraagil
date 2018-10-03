@@ -1,0 +1,12 @@
+---
+
+- name: instalando docker-ce
+  hosts: docker
+tasks:
+   - name: fazendo o dowload do script geralzao do docker
+     shell: 'curl -fsSL https://get.docker.com -o get-docker.sh'
+
+
+   - name: instalando o docker
+     shell: 'sudo sh get-docker.sh'
+dfasdfasdfasdf
